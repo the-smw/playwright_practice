@@ -1,0 +1,19 @@
+{
+  "name": "playwright_practice-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test-headed": "npx playwright test tests/simple-armory.spec.ts --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.0.15"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0"
+  }
+}
