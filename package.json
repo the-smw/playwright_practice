@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test-headed": "npx playwright test tests/simple-armory.spec.ts --headed"
+    "test-headed": "npx playwright test tests/filter-pets.spec.ts --headed",
+    "test-all": "npx playwright test"
   },
   "keywords": [],
   "author": "",

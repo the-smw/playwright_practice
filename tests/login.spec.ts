@@ -6,8 +6,10 @@ const username = process.env.VALIDUSER!;
 const password = process.env.PASSWORD!;
 let loginPage: LoginPage;
 
+test.use({ storageState: { cookies: [], origins: [] } }); // doesn't share the logged in session
+
 test('login test', async ({ page }) => {
-    const loginPage = new LoginPage(page);
+    loginPage = new LoginPage(page);
     await page.goto(url);
     await loginPage.fillUsername(username);
     await loginPage.fillPassword(password);
