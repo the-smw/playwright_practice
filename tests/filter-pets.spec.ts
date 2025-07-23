@@ -1,12 +1,9 @@
 import { test, expect } from '@playwright/test';
 import { PetsPage } from '../pages/pets-page';
-import { LoginPage } from '../pages/login-page';
 
-const url = process.env.URL!;
-const username = process.env.VALIDUSER!;
-const password = process.env.PASSWORD!;
+const url = 'https://training.testifi.io/';
+
 let petsPage: PetsPage;
-let loginPage: LoginPage;
 
 test.beforeEach(async ({ page }) => {
     await page.goto(url);
