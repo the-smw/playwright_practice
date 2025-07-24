@@ -4,6 +4,8 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  workflow_dispatch:
+     
 env:
   CI_USER: ${{ secrets.CI_USER }}
   CI_PW: ${{ secrets.CI_PW }}
